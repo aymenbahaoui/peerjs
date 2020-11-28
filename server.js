@@ -21,7 +21,7 @@ const peerServer = ExpressPeerServer(server, {
 
 app.use('/peerjs', peerServer);
 
-server.listen(9000, function () {
+server.listen(process.env.PORT, function () {
     console.log('CORS-enabled web server listening on port 80')
   });
 
